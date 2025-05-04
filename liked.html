@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liked Articles - TradeTutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #CCE5FF;
+      --light-tan: #EFEDE5;
+      --neon-green: #A7BC8C;
+      --dark-gray: #4B4B4B;
+      --font-main: 'Alegreya Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--blue);
+      color: var(--dark-gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--light-tan);
+      padding: 2em 1em 1em;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: var(--neon-green);
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5em;
+      color: var(--dark-gray);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      background-color: white;
+      padding: 1em;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark-gray);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--neon-green);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    .liked-item {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1em;
+      margin-bottom: 1.5em;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .liked-item img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .liked-item h4 {
+      flex: 1;
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 600px) {
+      .liked-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .liked-item img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    footer {
+      background-color: var(--light-tan);
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TradeTutor</h1>
+    <p>REV UP YOUR REPAIR CONFIDENCE</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search-results.html">Search</a>
+    <a href="liked.html">Liked</a>
+    <a href="chat.html">Chat</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <div class="container">
+    <h2>Liked Articles and Videos</h2>
+    <div class="liked-item">
+      <img src="battery.png" alt="Battery">
+      <h4>2013 Kia Sorento Battery Replacement</h4>
+    </div>
+    <div class="liked-item">
+      <img src="bmw.png" alt="Convertible Top">
+      <h4>1997 BMW 328Ci Convertible Top Fix</h4>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TradeTutor</p>
+  </footer>
+</body>
+</html>

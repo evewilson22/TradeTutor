@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Chat - TradeTutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #CCE5FF;
+      --light-tan: #EFEDE5;
+      --neon-green: #A7BC8C;
+      --dark-gray: #4B4B4B;
+      --font-main: 'Alegreya Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--blue);
+      color: var(--dark-gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--light-tan);
+      padding: 2em 1em 1em;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: var(--neon-green);
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5em;
+      color: var(--dark-gray);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      background-color: white;
+      padding: 1em;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark-gray);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--neon-green);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    .chat-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-height: 400px;
+      overflow-y: auto;
+      margin-bottom: 1em;
+    }
+
+    .message {
+      padding: 0.5em;
+      border-bottom: 1px solid #eee;
+    }
+
+    .input-area {
+      display: flex;
+      gap: 0.5em;
+    }
+
+    .input-area input {
+      flex: 1;
+      padding: 0.75em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .input-area button {
+      padding: 0.75em 1em;
+      border-radius: 8px;
+      background-color: var(--neon-green);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .input-area button:hover {
+      background-color: #8CA675;
+    }
+
+    footer {
+      background-color: var(--light-tan);
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TradeTutor</h1>
+    <p>REV UP YOUR REPAIR CONFIDENCE</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search-results.html">Search</a>
+    <a href="liked.html">Liked</a>
+    <a href="chat.html">Chat</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <div class="container">
+    <h2>Live Chat</h2>
+    <div class="chat-box">
+      <div class="message"><strong>Quentin (Mechanic):</strong> Let me know what model you're working on.</div>
+      <div class="message"><strong>User:</strong> I’m fixing a 2013 Kia Sorento battery. Any tips?</div>
+      <div class="message"><strong>Adrian (Auto-body):</strong> Be sure to disconnect the negative terminal first!</div>
+    </div>
+    <div class="input-area">
+      <input type="text" placeholder="Type your message...">
+      <button>Send</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TradeTutor</p>
+  </footer>
+</body>
+</html>
